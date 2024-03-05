@@ -1,0 +1,244 @@
+*{
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 10px 0px;
+}
+.yasmeen_container1{
+   padding: 0px 40px;
+display: flex;
+flex-direction: column;
+
+/* height: 50vh; */
+align-items: center;
+justify-content: center;
+}
+.yasmeen_title{
+    text-align: center;
+}
+.ytitle{
+    font-weight: bold;
+    font-size: 50px;
+    color: rgb(87, 124, 216);
+    
+}
+.ysubtitle{
+    color: gray;
+    letter-spacing: 2px;
+    margin-top: -15px;
+}
+.yasmeen_subtitle{
+    
+    align-self: self-start;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(33, 46, 80);
+    margin: 15px 0px;
+}
+.yicons{
+    text-decoration: none;
+    list-style: none;
+
+}
+.a{
+  
+    text-decoration: none;
+    color: black;
+}
+.yicons li {
+   height: 175px;
+   width: 175px;
+   padding: 0px 5px;
+   /* background-color: red; */
+border: dashed 3px rgb(87, 124, 216);
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   
+}
+.yicons{
+    display: flex;
+    width: 90%;
+    /* background-color: yellow; */
+    justify-content: space-around;
+    padding: 10px 0px;
+    align-self: center;
+}
+i{
+    visibility: visible;
+    /* background-color: red; */
+ 
+}
+i{
+
+font-size: 50px;
+color: black;
+}
+.yasmeen_icons{
+    width: 100%;
+    /* background-color: aqua; */
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.a p{
+    font-weight:550;
+    letter-spacing: 1px;
+}
+.a:hover i{
+color: rgb(0, 149, 255);
+
+animation: rotation 1.2s infinite linear;
+
+
+}
+@keyframes rotation{
+    
+    from{
+        transform: rotate(0deg);
+   
+    }
+    to{
+        transform: rotate(360deg);
+        
+    }
+    
+}
+.a:hover {
+    color: rgb(0, 149, 255);
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+   
+    }
+
+.filter img {
+ width: 95%;
+ height: 450px;
+ filter: grayscale(1);
+/* transition: all 1s ease; */
+
+border-radius: 40px;
+cursor: pointer;
+/* background-color: red; */
+}
+.filter:hover .headhide{
+display: block;
+
+
+}
+.headname{
+    color: gold;
+    font-size: 30px;
+   
+}
+.headhide p{
+    font-size: 25px;
+  
+    width: auto;
+}
+.filter{
+    position: relative;
+}
+.headhide{
+    display: none;
+    position: absolute;
+    bottom: 0%;
+    /* left: 50%; */
+    text-align: center;
+    translate: transform(-50%, -50%);
+    /* background-color: red; */
+    width: 95%;
+
+    
+}
+
+
+
+.filterul{
+padding: 0px 20px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+height: 450px;
+padding-bottom: 30px;
+
+
+}
+.filter:hover img{
+    transition: all 1s ease;
+    filter:none;
+    
+}
+.yasmeen-heads ul {
+text-decoration: none ;
+display: flex;
+list-style: none;
+
+}
+ .ytitle2{
+padding-top: 50px;
+font-weight: bold;
+font-size: 50px;
+color: rgb(87, 124, 216);
+
+}
+.yasmeen_container2{
+    /* background-color: red; */
+    position: relative;
+    height: 1000px;
+}
+/* .shapetri{
+    position: absolute;
+    left: 240px;
+    top: 15%;
+    z-index: -1;
+    
+    animation: round-01 5s linear infinite;
+} */
+@keyframes round-01 {
+    0% {
+      transform: rotate(15deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(15deg);
+    }
+  }
+  .shapelines{
+    position: absolute;
+    right: -40px;
+    bottom: 30%;
+    z-index: -1;
+    -webkit-animation: round-01 5s linear infinite;
+  }
+  .shapepyr{
+    position: absolute;
+    left: 200px;
+    bottom: 20%;
+    z-index: -1;
+  }
+  .shapecross{
+    position: absolute;
+    right: 170px;
+    top: 10%;
+    z-index: -1;
+   
+            animation:rotation 10s linear infinite;
+  }
+ .shape1{
+    position: absolute;
+    top: 40%;
+    left: -120px;
+    width: 240px;
+    height: 240px;
+    border: 30px solid #00bef0;
+    border-radius: 50%;
+    z-index: -1;
+ }
+ .yasmeen-section{
+    padding: 0px 40px;
+ }
