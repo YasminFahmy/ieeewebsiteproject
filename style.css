@@ -2,6 +2,7 @@
     font-family: sans-serif;
     margin: 0px;
     padding: 10px 0px;
+    box-sizing: border-box;
 }
 .yasmeen_container1{
    padding: 0px 40px;
@@ -25,6 +26,9 @@ justify-content: center;
     color: gray;
     letter-spacing: 2px;
     margin-top: -15px;
+}
+.ysubtitlemobile{
+    display: none;
 }
 .yasmeen_subtitle{
     
@@ -65,15 +69,13 @@ border: dashed 3px rgb(87, 124, 216);
     padding: 10px 0px;
     align-self: center;
 }
-i{
-    visibility: visible;
-    /* background-color: red; */
- 
-}
-i{
 
-font-size: 50px;
-color: black;
+.a i{
+    visibility: visible;
+font-size: 40px;
+ color: rgb(33, 46, 80);
+transition: all 0.5s ; 
+ 
 }
 .yasmeen_icons{
     width: 100%;
@@ -90,11 +92,13 @@ color: black;
 }
 .a:hover i{
 color: rgb(0, 149, 255);
-
-animation: rotation 1.2s infinite linear;
-
+/* transition: all 0.6s ;
+transform:rotate(360deg); */
+ transform: scale(-1) rotate(180deg);
+/* transition: all 0.5s ;  */
 
 }
+
 @keyframes rotation{
     
     from{
@@ -109,7 +113,7 @@ animation: rotation 1.2s infinite linear;
 }
 .a:hover {
     color: rgb(0, 149, 255);
-    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  
    
     }
 
@@ -144,7 +148,7 @@ display: block;
 .headhide{
     display: none;
     position: absolute;
-    bottom: 0%;
+    bottom: 10%;
     /* left: 50%; */
     text-align: center;
     translate: transform(-50%, -50%);
@@ -161,7 +165,7 @@ padding: 0px 20px;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
-height: 450px;
+/* height: 450px; */
 padding-bottom: 30px;
 
 
@@ -187,7 +191,7 @@ color: rgb(87, 124, 216);
 .yasmeen_container2{
     /* background-color: red; */
     position: relative;
-    height: 1000px;
+   
 }
 /* .shapetri{
     position: absolute;
@@ -209,11 +213,12 @@ color: rgb(87, 124, 216);
     }
   }
   .shapelines{
-    position: absolute;
-    right: -40px;
+    /* position: absolute;
+    right: 10px;
     bottom: 30%;
     z-index: -1;
-    -webkit-animation: round-01 5s linear infinite;
+    animation: round-01 5s linear infinite; */
+    display: none;
   }
   .shapepyr{
     position: absolute;
@@ -241,4 +246,96 @@ color: rgb(87, 124, 216);
  }
  .yasmeen-section{
     padding: 0px 40px;
+ }
+
+ @media screen and (max-width:600px) {
+    *{
+        margin: 0px;
+        padding: 10px 0px;
+      
+    }
+    .ytitle{
+        font-size: 35px;
+        padding-bottom: 20px;
+
+    }
+    .ytitle2{
+
+        font-size: 35px;
+        padding-bottom: 20px;
+    }
+.yasmeen_subtitle{
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    
+}
+.yicons{
+    flex-direction: column;
+/* background-color: red; */
+    align-items: center;
+   height: 1000px;
+}
+.shapecross{
+    display: none;
+}
+.yhide{
+    display: none;
+}
+.ysubtitlemobile{
+    display: block;
+}
+.filterul{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.shapelines{
+    display: none;
+}
+
+ }
+ @media screen and (min-width:601px) and (max-width:1000px) {
+    *{
+        margin: 0px;
+        padding: 10px 0px;
+      
+    }
+    .shapelines{
+        display: none;
+    }
+.yicons{
+    flex-wrap:wrap;
+    justify-content: center;
+    /* background-color: red; */
+}  
+.yicons li{
+  margin: 0px 10px;
+}
+.shapecross{
+    top: 6%;
+    right: 7%;
+}
+.filterul{
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    /* background-color: red; */
+    margin: 0px;
+    justify-content: space-around;
+    padding: 0px;
+}
+.yasmeen-heads{
+    display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.yhide{
+    display: none;
+}
+.ysubtitlemobile{
+    display: block;
+}
  }
